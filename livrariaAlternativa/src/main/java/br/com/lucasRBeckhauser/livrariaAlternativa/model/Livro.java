@@ -1,3 +1,5 @@
+package br.com.lucasRBeckhauser.livrariaAlternativa.model;
+
 import java.time.LocalDate;
 
 import jakarta.persistence.Entity;

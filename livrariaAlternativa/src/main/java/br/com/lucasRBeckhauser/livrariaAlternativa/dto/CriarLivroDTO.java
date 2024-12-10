@@ -1,6 +1,8 @@
-package dto;
+package br.com.lucasRBeckhauser.livrariaAlternativa.dto;
 
 import java.time.LocalDate;
+
+import br.com.lucasRBeckhauser.livrariaAlternativa.model.Livro;
 
 public record CriarLivroDTO(
 
