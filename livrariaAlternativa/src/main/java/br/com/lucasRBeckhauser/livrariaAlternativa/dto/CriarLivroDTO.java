@@ -20,21 +20,24 @@ public record CriarLivroDTO(
 
     public static CriarLivroDTO fromEntity(Livro livros) {
         return new CriarLivroDTO(
-            livros.genero(),
-            livros.getMensagem(),
-            livros.get
+            livros.getTitulo(),
+            livros.getAutor(),
+            livros.getGenero(),
+            livros.getDescricao(),
+            livros.getAnoPublicacao()
+        
         );
     }
 
     public Livro toEntity() {
         return new Livro(
-                this.anoPublicacao,
+                this.titulo,
                 this.autor,
-                this.descricao,
                 this.genero,
-                this.titulo
+                this.descricao,
+                this.anoPublicacao
                 
-                );
+        );
 
     }
 
