@@ -13,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Table(name = "livros")
 @Entity
-public class livro {
+public class Livro extends EntityId{
 
 
     private String titulo;
@@ -26,5 +26,5 @@ public class livro {
 
     private LocalDate anoPublicacao;
 
-    
+
 }
