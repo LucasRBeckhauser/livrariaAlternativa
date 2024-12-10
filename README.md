@@ -22,7 +22,7 @@ O sistema permite que os usuários realizem operações CRUD (Criar, Ler, Atuali
 
 ### Banco de Dados (Progress OpenEdge)
 
-- **Tabela de Livros**: Tabela com colunas como `id`, `titulo`, `autor`, `ano_publicacao`, `genero` e 'descricao'.
+- **Tabela de Livros**: Tabela com colunas como `id`, `titulo`, `autor`, `ano_publicacao`, `genero` e `descricao`.
 - **Stored Procedures**: Implementação de stored procedures para operações complexas, se necessário.
 
 ### Integração com PASOE
