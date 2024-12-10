@@ -33,7 +33,20 @@ O sistema permite que os usuários realizem operações CRUD (Criar, Ler, Atuali
 ## Fluxo de Trabalho
 
 1. **Adicionar Livro**: O usuário envia uma requisição POST para o endpoint `/livros` com os detalhes do livro.
+   - O controlador recebe a requisição e processa a lógica de negócios necessária, como validações.
+   - O serviço chama o endpoint REST do PASOE para armazenar os dados do livro.
+
 2. **Listar Livros**: O usuário faz uma requisição GET para o endpoint `/livros` para obter a lista de todos os livros.
+   - O controlador recebe a requisição e chama o serviço para buscar os livros.
+   - O serviço chama o PASOE para recuperar os dados do banco de dados Progress.
+
 3. **Atualizar Livro**: O usuário envia uma requisição PUT para o endpoint `/livros/{id}` com os novos dados do livro.
+   - O controlador processa a requisição e valida os dados.
+   - O serviço chama o PASOE para atualizar os dados do livro.
+
 4. **Remover Livro**: O usuário faz uma requisição DELETE para o endpoint `/livros/{id}` para remover um livro específico.
+   - O controlador recebe a requisição e chama o serviço para remover o livro.
+   - O serviço chama o PASOE para deletar o livro do banco de dados.
+
+5. **Resposta**: O controlador recebe a resposta do PASOE e a envia de volta para o frontend.
 
