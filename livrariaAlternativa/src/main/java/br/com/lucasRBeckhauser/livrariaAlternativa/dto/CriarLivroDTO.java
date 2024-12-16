@@ -19,6 +19,7 @@ public record CriarLivroDTO(
 ) {
 
     public static CriarLivroDTO fromEntity(Livro livros) {
+
         return new CriarLivroDTO(
             livros.getTitulo(),
             livros.getAutor(),
